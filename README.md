@@ -2,14 +2,7 @@
 
 A [herdr](https://herdr.dev) plugin that puts a small menu on your new-tab key. Press one key to open a tab that starts Claude, Codex, or any other command.
 
-```
-   c  claude
-   x  codex
-   g  gemini
-   ⏎  shell
-
-   esc to cancel
-```
+<img src="assets/screenshot.png" alt="The tab launcher menu open over a herdr pane" width="560">
 
 - The new tab opens in the directory of the pane you were in, and takes focus.
 - **Enter** opens a plain shell. **Esc** or **q** closes the menu without creating a tab.
