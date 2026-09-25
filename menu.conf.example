@@ -1,0 +1,7 @@
+# tab-launcher menu. Copy to "$(herdr plugin config-dir tab-launcher)/menu.conf"
+# and edit. One entry per line: <key> <command...>
+# The command is typed into the new tab's shell, so aliases, flags and
+# pipelines all work. Enter always opens a plain shell; Esc cancels.
+c claude
+x codex
+g gemini

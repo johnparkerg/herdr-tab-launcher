@@ -1,0 +1,23 @@
+id = "tab-launcher"
+name = "Tab Launcher"
+version = "0.1.0"
+min_herdr_version = "0.8.0"
+description = "New-tab picker: press one key to open a tab that starts claude, codex, or any command you configure."
+platforms = ["macos", "linux"]
+
+# The picker itself. Opened by the `new-tab` action below, never on its own.
+[[panes]]
+id = "menu"
+title = "New tab"
+placement = "popup"
+width = 34
+height = 11
+command = ["bash", "menu.sh"]
+
+# Bind this in config.toml to replace the plain new-tab key. Tabs created
+# through `herdr tab create` (agents, scripts) never go through it.
+[[actions]]
+id = "new-tab"
+title = "New tab (pick what to launch)"
+contexts = ["global"]
+command = ["bash", "open.sh"]
